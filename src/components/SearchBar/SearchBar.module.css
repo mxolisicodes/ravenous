@@ -1,0 +1,111 @@
+.SearchBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./background_search_desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.SearchBarSortOptions ul{
+    display: flex;
+    justify-content: center;
+    margin: 2.2rem;
+    margin-top: -4.88rem;
+    color: white;
+    top: 100%;
+}
+
+.SearchBarSortOptions li{
+    display: flex;
+    width: 4.33rem;
+    padding: 0 2.58rem 0.33rem 2.58rem;
+    border-bottom: 1px solid white;
+    font-weight: 600;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    float: inline-start;
+    transition: color 0.25s;
+}
+
+.SearchBarSortOptions li:hover{
+    cursor: pointer;
+    color:#e9c2c5;
+}
+
+.SearchBarSortOptions li.active,
+.SearchBarSortOptions li.active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
+.SearchBarFields{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.88rem;
+}
+
+.SearchBarFields input{
+    width: 21rem;
+    border: 1px solid #444;
+    margin-right: 30px;
+    padding: 0.66rem 1rem;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+.SearchBarFields input{
+    width: 21rem;
+    border: 1px solid #444;
+    margin-right: 30px;
+    padding: 0.66rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;   
+}
+
+.SearchBarFields input:last-child{
+    margin-right: 0;
+}
+
+.SearchBarSubmit{
+    text-align: center;
+}
+
+.SearchBarSubmit a{
+    border-radius: 4px;
+    padding: 10px 45px;
+    background-color: #f0c36c;
+    color: aliceblue;
+    font-weight: bold;
+    transition: background-color 0.5ms;
+}
+
+.SearchBarSubmit a:hover{
+    cursor: pointer;
+    background-color: #a7874b;
+}
+
+@media only screen and (max-width: 560px){
+    .SearchBar{
+        background-image: url(./background_search_desktop.jpg);
+    }
+    .SearchBarSortOptions{
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+    }
+
+    .SearchBarFields{
+        flex-direction: column;
+        align-items: center;
+    }
+    .SearchBarFields input{
+        margin-right: 0;
+        margin-bottom: 0.8rem;
+    }
+}
+
+

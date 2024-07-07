@@ -1,0 +1,49 @@
+/*This will style the values within the Business component.*/
+.business {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .business h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .business-information {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .business-address, .business-reviews {
+    width: 45%;
+  }
+  
+  .business-reviews {
+    text-align: right;
+  }
+  
+  .rating {
+    color: #f39c12;
+    font-size: 1.2em;
+  }
+  
